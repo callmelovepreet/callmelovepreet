@@ -1,0 +1,28 @@
+{
+  "user": "lovepreet",
+  "host": "github",
+  "rows": [
+    { "type": "header" },
+    { "type": "divider" },
+    { "type": "kv", "key": "Name", "value": "Lovepreet Singh" },
+    { "type": "kv", "key": "Now", "value": "RupeeQ, building fintech web experiences" },
+    { "type": "kv", "key": "Location", "value": "Delhi, India" },
+    { "type": "kv", "key": "Focus", "value": "Machine learning, data science, web" },
+    { "type": "gap" },
+    { "type": "section", "title": "Stack" },
+    { "type": "kv", "key": "ML / Data", "value": "Python, Pandas, NumPy, scikit-learn" },
+    { "type": "kv", "key": "Notebooks", "value": "Jupyter, EDA, model evaluation" },
+    { "type": "kv", "key": "Web", "value": "HTML, CSS, JavaScript, Tailwind, React" },
+    { "type": "kv", "key": "Deploy", "value": "Render, GitHub Actions" },
+    { "type": "gap" },
+    { "type": "section", "title": "Highlights" },
+    { "type": "kv", "key": "LEAP", "value": "Loan eligibility assessment, live on Render" },
+    { "type": "kv", "key": "Movies", "value": "Predicting movie success with LR, DT, RF" },
+    { "type": "kv", "key": "Practice", "value": "TensorTonic ML problem solutions" },
+    { "type": "gap" },
+    { "type": "kv", "key": "Status", "value": "At a learning stage....." },
+    { "type": "kv", "key": "X", "value": "@callmelovepreet" },
+    { "type": "gap" },
+    { "type": "palette" }
+  ]
+}

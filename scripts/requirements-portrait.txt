@@ -1,0 +1,5 @@
+# Only needed locally when regenerating the ASCII portrait.
+pillow
+numpy
+opencv-python
+rembg
