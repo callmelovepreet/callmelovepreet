@@ -1,10 +1,10 @@
 {
   "user": "callmelovepreet",
-  "fetched_at": "2026-10-21T11:42:59+00:00",
-  "total": 174,
-  "active_days": 33,
-  "current_streak": 16,
-  "longest_streak": 16,
+  "fetched_at": "2026-10-22T11:46:11+00:00",
+  "total": 233,
+  "active_days": 34,
+  "current_streak": 17,
+  "longest_streak": 17,
   "best_day": {
     "date": "2026-10-19",
     "count": 41
@@ -22,7 +22,7 @@
     "2026-07": 0,
     "2026-08": 0,
     "2026-09": 4,
-    "2026-10": 119
+    "2026-10": 178
   },
   "days": [
     {
@@ -688,12 +688,12 @@
     {
       "date": "2026-02-28",
       "count": 7,
-      "level": 2
+      "level": 1
     },
     {
       "date": "2026-03-01",
       "count": 25,
-      "level": 4
+      "level": 3
     },
     {
       "date": "2026-03-02",
@@ -1818,7 +1818,7 @@
     {
       "date": "2026-10-12",
       "count": 5,
-      "level": 2
+      "level": 1
     },
     {
       "date": "2026-10-13",
@@ -1862,7 +1862,12 @@
     },
     {
       "date": "2026-10-21",
-      "count": 16,
+      "count": 36,
+      "level": 4
+    },
+    {
+      "date": "2026-10-22",
+      "count": 39,
       "level": 4
     }
   ]
