@@ -2,7 +2,7 @@
 
 Every day is a building as tall as the square root of its count, drawn as a
 front, a lit top and a shaded side in an oblique projection. Buildings rise in
-a wave from the front row to the back.
+a wave from the front row to the back, then a stats footer fades in.
 
     python scripts/render_skyline_svg.py          # writes contrib-skyline.svg
     STATIC=1 python scripts/render_skyline_svg.py # frozen frame for previews
@@ -11,7 +11,7 @@ a wave from the front row to the back.
 from datetime import date, timedelta
 from pathlib import Path
 
-from render_heatmap_svg import BG, BORDER, FONT, MUTED, PALETTE, STATIC, WEEKS, levels, load
+from render_heatmap_svg import BG, BORDER, FONT, MUTED, PALETTE, STATIC, TEXT, WEEKS, levels, load
 
 OUT = Path(__file__).resolve().parent.parent / "contrib-skyline.svg"
 
@@ -46,7 +46,7 @@ def main() -> None:
 
     width = PAD * 2 + (WEEKS - 1) * STEP + CELL + 6 * DX + SX
     ground = TOP + MAXH + 6 * DY + SY  # bottom of the front row
-    height = ground + 34
+    height = ground + 60
 
     out = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height:.0f}" viewBox="0 0 {width} {height:.0f}">',
@@ -100,9 +100,21 @@ def main() -> None:
                            f'{d.strftime("%b")}</text>')
             seen = d.month
 
+    # Stats footer, fading in once the buildings have risen.
+    finish = START + (WEEKS + 18) * DELAY + 0.4
+    fstyle = "" if STATIC else f' class="f" style="animation-delay:{finish:.2f}s"'
+    best = data["best_day"]
+    best_label = date.fromisoformat(best["date"]).strftime("%b %d").replace(" 0", " ")
+    out.append(
+        f'<text{fstyle} x="{PAD}" y="{ground + 46:.0f}" font-size="12" fill="{MUTED}">'
+        f'<tspan fill="{TEXT}" font-weight="700">{data["total"]:,}</tspan> contributions in the last year'
+        f'  ·  current streak <tspan fill="{TEXT}">{data["current_streak"]}d</tspan>'
+        f'  ·  longest <tspan fill="{TEXT}">{data["longest_streak"]}d</tspan>'
+        f'  ·  best day <tspan fill="{TEXT}">{best["count"]}</tspan> ({best_label})</text>'
+    )
     out.append("</svg>")
 
-    OUT.write_text("\n".join(out) + "\n")
+    OUT.write_text("\n".join(out) + "\n", encoding="utf-8")
     print(f"wrote {OUT.name} ({width}x{height:.0f}, {len(grid)} days)")
 
 
