@@ -2,7 +2,7 @@
 
 Every day is a building as tall as the square root of its count, drawn as a
 front, a lit top and a shaded side in an oblique projection. Buildings rise in
-a wave from the front row to the back, then a leader line points at the best day.
+a wave from the front row to the back.
 
     python scripts/render_skyline_svg.py          # writes contrib-skyline.svg
     STATIC=1 python scripts/render_skyline_svg.py # frozen frame for previews
@@ -11,7 +11,7 @@ a wave from the front row to the back, then a leader line points at the best day
 from datetime import date, timedelta
 from pathlib import Path
 
-from render_heatmap_svg import BG, BORDER, FONT, MUTED, PALETTE, STATIC, TEXT, WEEKS, levels, load
+from render_heatmap_svg import BG, BORDER, FONT, MUTED, PALETTE, STATIC, WEEKS, levels, load
 
 OUT = Path(__file__).resolve().parent.parent / "contrib-skyline.svg"
 
@@ -21,7 +21,7 @@ DX, DY = 9, 7  # how far each row further back shifts right and up
 SX, SY = 7, 5.5  # depth of one building (top/side offset)
 MAXH = 110  # height of the busiest day
 PAD = 20
-TOP = 40  # room for the best-day label
+TOP = 20
 DELAY = 0.012  # seconds per wave step
 START = 0.3
 
@@ -66,8 +66,6 @@ def main() -> None:
         f'<rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1:.0f}" rx="10" fill="{BG}" stroke="{BORDER}"/>',
     ]
 
-    best_i = counts.index(max(counts))
-    best_top = None
     # Painter's order: back row (Sunday) first, left to right within a row.
     for row in range(7):
         k = 6 - row  # depth: 0 is the front row
@@ -91,8 +89,6 @@ def main() -> None:
                 f'{x + CELL + SX},{y - SY:.1f} {x + CELL},{y}" fill="{shade(color, -0.35)}"/>'
                 f"{top}</g>"
             )
-            if i == best_i:
-                best_top = (x + CELL / 2 + SX / 2, y - h - SY / 2)
 
     # Month labels along the front edge, under the first week of each month.
     seen = None
@@ -104,22 +100,6 @@ def main() -> None:
                            f'{d.strftime("%b")}</text>')
             seen = d.month
 
-    if best_top:
-        finish = START + (WEEKS + 18) * DELAY + 0.4
-        fstyle = "" if STATIC else f' class="f" style="animation-delay:{finish:.2f}s"'
-        bx, by = best_top
-        ly = TOP - 14
-        anchor = "end" if bx > width / 2 else "start"
-        tx = bx - 6 if anchor == "end" else bx + 6
-        label = grid[best_i].strftime("%b %d").replace(" 0", " ")
-        out += [
-            f"<g{fstyle}>",
-            f'<line x1="{bx:.1f}" y1="{by - 4:.1f}" x2="{bx:.1f}" y2="{ly + 4}" stroke="{MUTED}" stroke-dasharray="2 3"/>',
-            f'<circle cx="{bx:.1f}" cy="{by - 4:.1f}" r="2" fill="{TEXT}"/>',
-            f'<text x="{tx:.1f}" y="{ly + 8}" font-size="12" fill="{MUTED}" text-anchor="{anchor}">best day '
-            f'<tspan fill="{TEXT}" font-weight="700">{max(counts)}</tspan> ({label})</text>',
-            "</g>",
-        ]
     out.append("</svg>")
 
     OUT.write_text("\n".join(out) + "\n")

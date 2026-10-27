@@ -1,7 +1,7 @@
 """Render data/contributions.json as an animated 53-week heatmap SVG.
 
 Boxes drop in along a diagonal once on load, then freeze. A Less -> More
-legend and a stats footer sit underneath.
+legend sits underneath.
 
     python scripts/render_heatmap_svg.py          # writes contrib-heatmap.svg
     STATIC=1 python scripts/render_heatmap_svg.py # frozen frame for previews
@@ -134,20 +134,11 @@ def main() -> None:
             f"{ordinal(d.day)}</title></rect>"
         )
 
-    # Footer: stats on the left, legend on the right.
+    # Footer: legend on the right.
     finish = START + (WEEKS + 7) * DELAY + 0.3
     fstyle = "" if STATIC else f' class="f" style="animation-delay:{finish:.2f}s"'
-    best = data["best_day"]
-    best_label = date.fromisoformat(best["date"]).strftime("%b %d").replace(" 0", " ")
-    stats = (
-        f'<tspan fill="{TEXT}" font-weight="700">{data["total"]:,}</tspan> contributions in the last year'
-        f'  ·  current streak <tspan fill="{TEXT}">{data["current_streak"]}d</tspan>'
-        f'  ·  longest <tspan fill="{TEXT}">{data["longest_streak"]}d</tspan>'
-        f'  ·  best day <tspan fill="{TEXT}">{best["count"]}</tspan> ({best_label})'
-    )
     fy = grid_bottom + 34
     out.append(f"<g{fstyle}>")
-    out.append(f'<text x="{LEFT}" y="{fy}" font-size="12" fill="{MUTED}">{stats}</text>')
     lx = width - PAD - len(PALETTE) * (CELL + 3) - 34
     out.append(f'<text x="{lx - 34}" y="{fy}" font-size="11" fill="{MUTED}">Less</text>')
     for i, color in enumerate(PALETTE):
