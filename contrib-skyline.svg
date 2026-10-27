@@ -112,7 +112,7 @@ text{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;}
 <polygon points="800,162.5 807,157.0 819,157.0 812,162.5" fill="#161b22"/>
 <g class="b" style="animation-delay:1.080s"><rect x="815" y="126.6" width="12" height="35.9" fill="#39d353"/><polygon points="827,126.6 834,121.1 834,157.0 827,162.5" fill="#258936"/><polygon points="815,126.6 822,121.1 834,121.1 827,126.6" fill="#6ade7e"/></g>
 <g class="b" style="animation-delay:1.092s"><rect x="830" y="59.8" width="12" height="102.7" fill="#39d353"/><polygon points="842,59.8 849,54.3 849,157.0 842,162.5" fill="#258936"/><polygon points="830,59.8 837,54.3 849,54.3 842,59.8" fill="#6ade7e"/></g>
-<polygon points="845,162.5 852,157.0 864,157.0 857,162.5" fill="#161b22"/>
+<g class="b" style="animation-delay:1.104s"><rect x="845" y="146.5" width="12" height="16.0" fill="#0e4429"/><polygon points="857,146.5 864,141.0 864,157.0 857,162.5" fill="#092c1b"/><polygon points="845,146.5 852,141.0 864,141.0 857,146.5" fill="#4a735e"/></g>
 <polygon points="56,169.5 63,164.0 75,164.0 68,169.5" fill="#161b22"/>
 <polygon points="71,169.5 78,164.0 90,164.0 83,169.5" fill="#161b22"/>
 <polygon points="86,169.5 93,164.0 105,164.0 98,169.5" fill="#161b22"/>
@@ -165,6 +165,7 @@ text{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;}
 <g class="b" style="animation-delay:1.032s"><rect x="791" y="141.7" width="12" height="27.8" fill="#26a641"/><polygon points="803,141.7 810,136.2 810,164.0 803,169.5" fill="#196c2a"/><polygon points="791,141.7 798,136.2 810,136.2 803,141.7" fill="#5cbc70"/></g>
 <g class="b" style="animation-delay:1.044s"><rect x="806" y="153.5" width="12" height="16.0" fill="#0e4429"/><polygon points="818,153.5 825,148.0 825,164.0 818,169.5" fill="#092c1b"/><polygon points="806,153.5 813,148.0 825,148.0 818,153.5" fill="#4a735e"/></g>
 <g class="b" style="animation-delay:1.056s"><rect x="821" y="80.2" width="12" height="89.3" fill="#39d353"/><polygon points="833,80.2 840,74.7 840,164.0 833,169.5" fill="#258936"/><polygon points="821,80.2 828,74.7 840,74.7 833,80.2" fill="#6ade7e"/></g>
+<g class="b" style="animation-delay:1.068s"><rect x="836" y="153.5" width="12" height="16.0" fill="#0e4429"/><polygon points="848,153.5 855,148.0 855,164.0 848,169.5" fill="#092c1b"/><polygon points="836,153.5 843,148.0 855,148.0 848,153.5" fill="#4a735e"/></g>
 <polygon points="47,176.5 54,171.0 66,171.0 59,176.5" fill="#161b22"/>
 <polygon points="62,176.5 69,171.0 81,171.0 74,176.5" fill="#161b22"/>
 <polygon points="77,176.5 84,171.0 96,171.0 89,176.5" fill="#161b22"/>
