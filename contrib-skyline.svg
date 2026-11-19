@@ -108,7 +108,7 @@ text{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;}
 <polygon points="740,142.5 747,137.0 759,137.0 752,142.5" fill="#161b22"/>
 <polygon points="755,142.5 762,137.0 774,137.0 767,142.5" fill="#161b22"/>
 <g class="b" style="animation-delay:1.044s"><rect x="770" y="106.6" width="12" height="35.9" fill="#39d353"/><polygon points="782,106.6 789,101.1 789,137.0 782,142.5" fill="#258936"/><polygon points="770,106.6 777,101.1 789,101.1 782,106.6" fill="#6ade7e"/></g>
-<g class="b" style="animation-delay:1.056s"><rect x="785" y="39.8" width="12" height="102.7" fill="#39d353"/><polygon points="797,39.8 804,34.3 804,137.0 797,142.5" fill="#258936"/><polygon points="785,39.8 792,34.3 804,34.3 797,39.8" fill="#6ade7e"/></g>
+<g class="b" style="animation-delay:1.056s"><rect x="785" y="39.8" width="12" height="102.7" fill="#69f0a0"/><polygon points="797,39.8 804,34.3 804,137.0 797,142.5" fill="#449c68"/><polygon points="785,39.8 792,34.3 804,34.3 797,39.8" fill="#8ef4b8"/></g>
 <g class="b" style="animation-delay:1.068s"><rect x="800" y="126.5" width="12" height="16.0" fill="#0e4429"/><polygon points="812,126.5 819,121.0 819,137.0 812,142.5" fill="#092c1b"/><polygon points="800,126.5 807,121.0 819,121.0 812,126.5" fill="#4a735e"/></g>
 <g class="b" style="animation-delay:1.080s"><rect x="815" y="126.5" width="12" height="16.0" fill="#0e4429"/><polygon points="827,126.5 834,121.0 834,137.0 827,142.5" fill="#092c1b"/><polygon points="815,126.5 822,121.0 834,121.0 827,126.5" fill="#4a735e"/></g>
 <g class="b" style="animation-delay:1.092s"><rect x="830" y="126.5" width="12" height="16.0" fill="#0e4429"/><polygon points="842,126.5 849,121.0 849,137.0 842,142.5" fill="#092c1b"/><polygon points="830,126.5 837,121.0 849,121.0 842,126.5" fill="#4a735e"/></g>
@@ -218,7 +218,7 @@ text{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;}
 <g class="b" style="animation-delay:0.996s"><rect x="782" y="140.5" width="12" height="16.0" fill="#0e4429"/><polygon points="794,140.5 801,135.0 801,151.0 794,156.5" fill="#092c1b"/><polygon points="782,140.5 789,135.0 801,135.0 794,140.5" fill="#4a735e"/></g>
 <g class="b" style="animation-delay:1.008s"><rect x="797" y="140.5" width="12" height="16.0" fill="#0e4429"/><polygon points="809,140.5 816,135.0 816,151.0 809,156.5" fill="#092c1b"/><polygon points="797,140.5 804,135.0 816,135.0 809,140.5" fill="#4a735e"/></g>
 <g class="b" style="animation-delay:1.020s"><rect x="812" y="140.5" width="12" height="16.0" fill="#0e4429"/><polygon points="824,140.5 831,135.0 831,151.0 824,156.5" fill="#092c1b"/><polygon points="812,140.5 819,135.0 831,135.0 824,140.5" fill="#4a735e"/></g>
-<polygon points="827,156.5 834,151.0 846,151.0 839,156.5" fill="#161b22"/>
+<g class="b" style="animation-delay:1.032s"><rect x="827" y="140.5" width="12" height="16.0" fill="#0e4429"/><polygon points="839,140.5 846,135.0 846,151.0 839,156.5" fill="#092c1b"/><polygon points="827,140.5 834,135.0 846,135.0 839,140.5" fill="#4a735e"/></g>
 <polygon points="38,163.5 45,158.0 57,158.0 50,163.5" fill="#161b22"/>
 <polygon points="53,163.5 60,158.0 72,158.0 65,163.5" fill="#161b22"/>
 <polygon points="68,163.5 75,158.0 87,158.0 80,163.5" fill="#161b22"/>
@@ -271,6 +271,7 @@ text{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;}
 <g class="b" style="animation-delay:0.960s"><rect x="773" y="147.5" width="12" height="16.0" fill="#0e4429"/><polygon points="785,147.5 792,142.0 792,158.0 785,163.5" fill="#092c1b"/><polygon points="773,147.5 780,142.0 792,142.0 785,147.5" fill="#4a735e"/></g>
 <g class="b" style="animation-delay:0.972s"><rect x="788" y="147.5" width="12" height="16.0" fill="#0e4429"/><polygon points="800,147.5 807,142.0 807,158.0 800,163.5" fill="#092c1b"/><polygon points="788,147.5 795,142.0 807,142.0 800,147.5" fill="#4a735e"/></g>
 <g class="b" style="animation-delay:0.984s"><rect x="803" y="147.5" width="12" height="16.0" fill="#0e4429"/><polygon points="815,147.5 822,142.0 822,158.0 815,163.5" fill="#092c1b"/><polygon points="803,147.5 810,142.0 822,142.0 815,147.5" fill="#4a735e"/></g>
+<polygon points="818,163.5 825,158.0 837,158.0 830,163.5" fill="#161b22"/>
 <polygon points="29,170.5 36,165.0 48,165.0 41,170.5" fill="#161b22"/>
 <polygon points="44,170.5 51,165.0 63,165.0 56,170.5" fill="#161b22"/>
 <polygon points="59,170.5 66,165.0 78,165.0 71,170.5" fill="#161b22"/>
@@ -387,5 +388,5 @@ text{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;}
 <text x="650" y="198" font-size="11" fill="#8b949e">Sep</text>
 <text x="710" y="198" font-size="11" fill="#8b949e">Oct</text>
 <text x="770" y="198" font-size="11" fill="#8b949e">Nov</text>
-<text class="f" style="animation-delay:1.55s" x="20" y="224" font-size="12" fill="#8b949e"><tspan fill="#c9d1d9" font-weight="700">330</tspan> contributions in the last year  ·  current streak <tspan fill="#c9d1d9">43d</tspan>  ·  longest <tspan fill="#c9d1d9">43d</tspan>  ·  best day <tspan fill="#c9d1d9">47</tspan> (Oct 22)</text>
+<text class="f" style="animation-delay:1.55s" x="20" y="224" font-size="12" fill="#8b949e"><tspan fill="#c9d1d9" font-weight="700">331</tspan> contributions in the last year  ·  current streak <tspan fill="#c9d1d9">44d</tspan>  ·  longest <tspan fill="#c9d1d9">44d</tspan>  ·  best day <tspan fill="#c9d1d9">47</tspan> (Oct 22)</text>
 </svg>
