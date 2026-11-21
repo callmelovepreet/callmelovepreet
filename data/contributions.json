@@ -1,10 +1,10 @@
 {
   "user": "callmelovepreet",
-  "fetched_at": "2026-11-20T15:22:32+00:00",
-  "total": 332,
-  "active_days": 62,
-  "current_streak": 45,
-  "longest_streak": 45,
+  "fetched_at": "2026-11-21T14:35:02+00:00",
+  "total": 333,
+  "active_days": 63,
+  "current_streak": 46,
+  "longest_streak": 46,
   "best_day": {
     "date": "2026-10-22",
     "count": 47
@@ -22,7 +22,7 @@
     "2026-08": 0,
     "2026-09": 4,
     "2026-10": 256,
-    "2026-11": 21
+    "2026-11": 22
   },
   "days": [
     {
@@ -1872,6 +1872,11 @@
     },
     {
       "date": "2026-11-20",
+      "count": 1,
+      "level": 1
+    },
+    {
+      "date": "2026-11-21",
       "count": 0,
       "level": 0
     }
